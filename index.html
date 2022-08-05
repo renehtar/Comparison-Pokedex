@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./favicons/favicon-16x16.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./js/script.js"></script>
+  <title>Pokédex</title>
+</head>
+<body>
+
+  <main>
+    <div class="first__pokemon">
+      <div class="card__first__pokemon">
+        <img class="pokemon__image" src="./imagens/defaultImage.png" alt="">
+        <p class="name__pokemon">nome</p>
+        <p class="type__pokemon">tipo</p>
+        <p class="id__pokemon">#</p>
+        <div class="statsments">
+          <p class="life__pokemon">vida:?</p>
+          <hr size="3">
+          <p class="attack__pokemon">ataque:?</p>
+          <hr size="3">
+          <p class="defese__pokemon">defesa:?</p>
+          <hr size="3">
+          <p class="speed__pokemon">velocidade:?</p>
+          <hr size="3">
+          <p class="total__pokemon">total:?</p>
+          <hr size="3">
+        </div>
+      </div>
+
+      <form class="form" data-index="0">
+        <input type="search" class="input__search" placeholder="Nome ou número" required/>
+        <button class="button__submit" type="submit">procurar</button>
+      </form>
+    </div>
+    
+    <div class="compare__statsments">
+      <p>compare vida: </p>
+      <span class="range__stats range__life"></span>
+      <p>compare ataque: </p>
+      <span class="range__stats range__attack"></span>
+      <p>compare defesa: </p>
+      <span class="range__stats range__defese"></span>
+      <p>compare velocidade: </p>
+      <span class="range__stats range__speed"></span>
+      <p>compare total: </p>
+      <span class="range__stats range__total"></span>
+    </div>
+    
+    <div class="second__pokemon">
+      <div class="card__second__pokemon">
+        <img class="pokemon__image" src="./imagens/defaultImage.png" alt="">
+        <p class="name__pokemon">nome</p>
+        <p class="type__pokemon">tipo</p>
+        <p class="id__pokemon">#</p>
+        <div class="statsments">
+          <p class="life__pokemon">vida:?</p>
+          <hr size="3">
+          <p class="attack__pokemon">ataque:?</p>
+          <hr size="3">
+          <p class="defese__pokemon">defesa:?</p>
+          <hr size="3">
+          <p class="speed__pokemon">velocidade:?</p>
+          <hr size="3">
+          <p class="total__pokemon">total:?</p>
+          <hr size="3">
+        </div>
+      </div>
+
+      <form class="form" data-index="1">
+        <input type="search" class="input__search" placeholder="Nome ou número" required/>
+        <button class="button__submit" type="submit">procurar</button>
+      </form>
+    </div>
+
+    <div class="alert__modal">
+      <p>Este Pokémon não existe.</p>
+    </div>
+  </main>
+</body>
+</html>
