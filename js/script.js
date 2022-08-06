@@ -67,6 +67,7 @@ const handleForm = async (event)=>{
   namePokemon[index].innerText = data.name
   idPokemon[index].innerText = `#${data.id}`
   typePokemon[index].innerText = data.types[0].type.name
+  typePokemon[index].className = `type__pokemon ${data.types[0].type.name}`
   imgs[index].src = data.sprites.versions['generation-v']['black-white'].animated.front_default
   lifePokemon[index].innerText = `vida: ${data.stats[0].base_stat}`
   attackPokemon[index].innerText = `ataque: ${data.stats[1].base_stat}`
